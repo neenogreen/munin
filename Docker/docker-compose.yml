@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  munin:
+    image: munin
+    #stdin_open: true
+    #tty: true
+    #entrypoint: /bin/sh
+    container_name: munin
+    hostname: munin
+    build: .
+    volumes:
+      - ../:/opt/munin
+    ports:
+      - 8089:8088
+    networks:
+      - frontend
+
+networks:
+  frontend:

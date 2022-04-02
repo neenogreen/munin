@@ -1314,7 +1314,7 @@ if __name__ == '__main__':
         alreadyExists, resultFile = generateResultFilename(args.f, args.o)
         print("Send your requests to http://server:%d/value" % int(args.w))
         printKeyLine("STARTING FLASK")
-        app.run(port=int(args.w))
+        app.run(host="0.0.0.0",port=int(args.w))
 
 
     # DEFAULT -----------------------------------------------------------------
