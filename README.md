@@ -1,3 +1,12 @@
+## Munin as dockerfile + docker-compose
+
+This is a fork of munin project of Florian Roth that adds the posibility to run it in a docker. 
+Munin is launched as webservice and waits for incoming requests:
+```bash
+http://server:8089/<string>
+```
+The port can be configuraed in the docker-compose.yml file within the Docker folder
+
 [![Actively Maintained](https://img.shields.io/badge/Maintenance%20Level-Actively%20Maintained-green.svg)](https://gist.github.com/cheerfulstoic/d107229326a01ff0f333a1d3476e068d)
 
      _________   _    _   ______  _____  ______
